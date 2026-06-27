@@ -12,17 +12,17 @@ datasource db {
   provider = "postgresql"
 }
 
-model User{
+model Employee{
   id Int @id @default(autoincrement())
   name String @unique
   email String @unique
   role Role
   createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  updatedAT DateTime @updatedAt
 }
 
 enum Role {
-      ENGINEER
-      ADMIN
-      INTERN
+  INTERN
+  ENGINEER
+  ADMIN
 }
