@@ -20,7 +20,6 @@ export class EmployeeService {
       });
     return this.databaseService.employee.findMany();
   }
-
   findOne(id: number) {
     return this.databaseService.employee.findUnique({
       where: {
