@@ -19,7 +19,6 @@ export class EmployeeController {
   create(@Body() createEmployeeDto: Prisma.EmployeeCreateInput) {
     return this.employeeService.create(createEmployeeDto);
   }
-
   @Get()
   findAll(@Query('role') role?: 'INTERN' | 'ENGINEER' | 'ADMIN') {
     return this.employeeService.findAll(role);
