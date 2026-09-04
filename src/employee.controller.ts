@@ -11,6 +11,7 @@ import {
 import { EmployeeService } from './employee.service';
 import { prisma } from '@prisma/client';
 
+
 @Controller('employee')
 export class EmployeeController {
   constructor(private readonly employeeService: EmployeeService) {}
